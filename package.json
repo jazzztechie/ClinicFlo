@@ -1,0 +1,24 @@
+{
+  "name": "clinicflo",
+  "version": "1.0.0",
+  "description": "AI-powered predictive no-show management and appointment slot recovery system for hospital OPDs.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazzztechie/ClinicFlo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jazzztechie/ClinicFlo/issues"
+  },
+  "homepage": "https://github.com/jazzztechie/ClinicFlo#readme"
+}
