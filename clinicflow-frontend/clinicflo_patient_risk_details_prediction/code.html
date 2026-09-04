@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#001d31","tertiary-fixed":"#cce5ff","on-surface":"#131b2e","on-primary-fixed":"#00201d","outline-variant":"#bcc9c6","on-secondary":"#ffffff","on-secondary-fixed-variant":"#005048","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-secondary-container":"#006f64","surface-container-high":"#e2e7ff","on-error-container":"#93000a","on-primary":"#ffffff","secondary":"#006b5f","on-error":"#ffffff","secondary-container":"#6df5e1","on-background":"#131b2e","on-surface-variant":"#3d4947","outline":"#6d7a77","error":"#ba1a1a","primary-fixed":"#89f5e7","tertiary":"#006194","primary-container":"#008378","surface-container-lowest":"#ffffff","surface-bright":"#faf8ff","on-tertiary-fixed-variant":"#004b73","tertiary-container":"#007bb9","on-tertiary-container":"#fdfcff","surface":"#faf8ff","error-container":"#ffdad6","on-secondary-fixed":"#00201c","on-primary-fixed-variant":"#005049","inverse-surface":"#283044","secondary-fixed-dim":"#4fdbc8","primary-fixed-dim":"#6bd8cb","surface-container-low":"#f2f3ff","surface-dim":"#d2d9f4","surface-container":"#eaedff","surface-container-highest":"#dae2fd","surface-tint":"#006a61","on-tertiary":"#ffffff","tertiary-fixed-dim":"#93ccff","inverse-primary":"#6bd8cb","on-primary-container":"#f4fffc","primary":"#00685f","secondary-fixed":"#71f8e4","background":"#faf8ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-mobile":"0.75rem","gutter-desktop":"1.25rem","space-xxs":"0.125rem","space-2xl":"2rem","margin-mobile":"1rem","margin-desktop":"2rem","space-base":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-sm":"0.5rem","space-lg":"1.25rem","space-xl":"1.5rem"},fontFamily:{"headline-lg":["manrope"],"label-sm":["inter"],"label-lg":["inter"],"body-lg":["inter"],"data-metric":["manrope"],"display-lg":["manrope"],"headline-sm":["manrope"],"headline-md":["manrope"],"label-md":["inter"],"display-lg-mobile":["manrope"],"body-md":["inter"],"body-sm":["inter"]},fontSize:{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full h-16 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="ClinicFlo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Unut0jobfMbakwVQY4AdOKPi6Bl0i6IgcdXuGtaw4iRhfyPigsY8g55t16tvdk-WeV2BQb7EndzoHz5N5NhhKGGe3g9gMVw2NlszPaWkTINqgfDDLPxk68O18Nq0xM2N-9aNZFO6NdfMGrVNUOIMkwWK9iznFc53ZCqd-b62QqlU7n-EmEDyNAx-EZzGoETwQ2t7yzLRoJ2ffybHZnhzYVkgJMZbu73BEPnHWfBh9YE6tLxHK9eqsefls"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">ClinicFlo</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Slot Recovery</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-secondary-container/20 text-on-secondary-container"><span class="material-symbols-outlined text-[14px] text-secondary animate-pulse">fiber_manual_record</span><span class="font-label-sm text-label-sm font-semibold tracking-wide">LIVE OPD: General Medicine Wing A</span></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="waitlist-and-recovery" href="#">Waitlist &amp; Recovery</a><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="patient-risk-details" href="#">Patient Risk Details</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="outcomes-and-analytics" href="#">Outcomes &amp; Analytics</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xxs rounded-lg bg-surface-container-low text-on-surface"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span><span class="font-label-md text-label-md font-medium">Morning OPD (08:00 - 14:00)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant cursor-pointer">arrow_drop_down</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Mock API: ACTIVE</span></div><button aria-label="High-risk alerts" class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-1 -right-1 px-1.5 py-0.2 rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold leading-tight">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden md:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Ananya</span><span class="font-label-sm text-label-sm text-on-surface-variant">Reception Desk 02</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between p-space-base"><div class="flex flex-col gap-space-lg"><div class="px-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinical Navigation</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="waitlist-and-recovery" href="#"><span class="material-symbols-outlined text-[20px]">hourglass_top</span><span class="font-label-lg text-label-lg">Waitlist &amp; Recovery</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="patient-risk-details" href="#"><span class="material-symbols-outlined text-[20px]">vital_signs</span><span class="font-label-lg text-label-lg">Patient Risk Details</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="outcomes-and-analytics" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-label-lg text-label-lg">Outcomes &amp; Analytics</span></a></nav></div><div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Wing A Acuity</span><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span></div><div class="flex items-baseline justify-between"><span class="font-headline-sm text-headline-sm text-on-surface">94% Filled</span><span class="font-label-sm text-label-sm text-secondary font-semibold">4 Freed</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Avg recovery: 2m 14s</span></div></aside><div class="pl-64"><div class="w-full pt-16"><div class="w-full bg-surface-container-low px-gutter-desktop py-space-xs shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">local_hospital</span><span>OPD Operations</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">Wing A Clinical Queue</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-secondary font-medium">Slot Recovery Active</span></div></div><main class="w-full px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Navigation & Return Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<button aria-label="Return to appointments" class="group flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[20px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>Dashboard</span>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span>Appointments</span>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span class="text-secondary font-semibold">Triage View</span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-xxs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Rahul Verma</h1>
+<span class="px-space-sm py-space-xxs rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold tracking-tight">#APT-8421</span>
+<span class="hidden sm:inline-flex items-center gap-space-xxs px-space-sm py-space-xxs rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">crisis_alert</span>
+            Triage Level 1
+          </span>
+</div>
+</div>
+</div>
+<!-- Right utility status chips -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden xl:flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Predicted Impact</span>
+<span class="font-label-lg text-label-lg font-bold text-error">20m Idle Window</span>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-lowest shadow-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">print</span>
+<span class="hidden md:inline">Print Slip</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">sync</span>
+<span class="hidden md:inline">Re-score ML</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Prominent Critical Alert Banner -->
+<div class="relative overflow-hidden rounded-xl bg-error-container text-on-error-container shadow-md p-space-lg">
+<div class="absolute -right-8 -top-8 w-40 h-40 rounded-full bg-error/10 pointer-events-none blur-xl"></div>
+<div class="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md max-w-4xl">
+<div class="flex-shrink-0 w-11 h-11 rounded-xl bg-error text-on-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-error">Critical Slot At Risk</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm opacity-80">Slot ID: GM-104-1015</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-error-container font-medium leading-snug">
+            High probability <strong class="font-headline-sm text-headline-sm font-bold underline decoration-error decoration-2">86% of no-show</strong> for 10:15 AM General Medicine OPD. Attending physician <strong class="font-bold">Dr. S. Radhakrishnan</strong> will experience an unutilized 20-minute idle window without immediate receptionist intervention.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center flex-shrink-0">
+<a class="px-space-md py-space-sm rounded-lg bg-error text-on-error font-label-lg text-label-lg shadow-sm hover:bg-on-error-container transition-all flex items-center gap-space-xs" href="#triage-actions">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Intervene Now</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 2 Column Master/Detail Split Layout (60% / 40%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Patient Profile & ML Diagnostics (60% -> 7 Cols on desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Patient Profile Card -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="p-space-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md bg-surface-container-low/50">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm flex-shrink-0 bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of a 24 year old Indian male patient named Rahul Verma, clean lighting, medical records studio portrait, confident look, wearing navy casual shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOUAv1nrdmQzZ7uX5EKfc2Mp357zQeExtdIuKKX6PZsDH3qm5VfE3pBryuNO0tTP_CemVQ1__TFbnHFTr-bTGhtGw7T0hwDc0CwGwVw3jQldOUuLCu-VSMe-WRkI9vYFD8rNtQIL_Sk-3qbnme8zDt4_l2iHgjqXT5zuMwdkyGpzOJn0roVZpt-XHWk5P3IGB1LiZWvGfQGuxczaBFd84KmrolYQF-dOsHmDEASvl4ZofsWi0D96nC"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-error border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Rahul Verma</span>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Token #14</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">24 Yrs • Male • UHID: BLR-OPD-99824</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" href="tel:+919876543210">
+<span class="material-symbols-outlined text-[16px] text-primary">call</span>
+<span>+91 98765-43210</span>
+</a>
+</div>
+</div>
+<!-- Appointment Context Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md p-space-lg">
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[15px] text-primary">schedule</span>
+              Slot Allocation
+            </span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-xxs">Today, 10:15 AM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. Duration: 20 min</span>
+</div>
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[15px] text-tertiary">calendar_clock</span>
+              Booking Lead Time
+            </span>
+<span class="font-headline-sm text-headline-sm text-error mt-space-xxs">11 Days Ago</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Channel: Mobile Web PWA</span>
+</div>
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[15px] text-secondary">stethoscope</span>
+              Consulting Doctor
+            </span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-xxs">Dr. Radhakrishnan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">General Med • Room 104</span>
+</div>
+</div>
+</div>
+<!-- Giant Probability & Risk Score Hero Card -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-xl relative overflow-hidden">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<!-- Circular Progress Meter & Giant Metric -->
+<div class="flex items-center gap-space-lg">
+<div class="relative w-32 h-32 flex items-center justify-center flex-shrink-0">
+<!-- Radial SVG Ring -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 120 120">
+<circle class="text-surface-container-high" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-error" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-dasharray="314.159" stroke-dashoffset="43.98" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-display-lg text-display-lg text-error tracking-tight font-extrabold leading-none">86%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold mt-1">Probability</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase tracking-wider self-start">
+<span class="material-symbols-outlined text-[14px]">shield_with_heart</span>
+                High No-Show Risk
+              </div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Unconfirmed High-Risk Arrival</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                Statistical model predicts acute likelihood of slot abandonment. Reallocating immediately prevents clinical bottlenecking.
+              </p>
+</div>
+</div>
+<!-- Comparative Benchmarks -->
+<div class="flex flex-col gap-space-sm w-full md:w-auto md:min-w-[210px] p-space-md rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Baseline OPD Average</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">18.2%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">(General Med)</span>
+</div>
+<!-- Small comparative bar -->
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 18.2%;"></div>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Model Confidence</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">94.1%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ROC-AUC: 0.91</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Ensemble: RF + GBDT + LogReg</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Explainable ML Contributing Factors Section -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">psychology</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Why? Contributing Risk Factors (Explainable ML)</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SHAP Feature Importance</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Local interpretable feature attributions evaluated across 14,200 historic OPD attendances in Hospital Wing A:
+        </p>
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<!-- Factor 1 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-md bg-error-container text-on-error-container flex items-center justify-center font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5">
+                01
+              </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Booked &gt;7 days in advance (11 days)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Historical patient drop-off frequency peaks after calendar day 7.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-center">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 76%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-error font-bold whitespace-nowrap">+38% Weight</span>
+</div>
+</div>
+<!-- Factor 2 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-md bg-error-container text-on-error-container flex items-center justify-center font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5">
+                02
+              </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Younger demographic bracket (18-29 yrs)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Statistically higher propensity for uncommunicated schedule conflicts.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-center">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 52%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-error font-bold whitespace-nowrap">+24% Weight</span>
+</div>
+</div>
+<!-- Factor 3 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5">
+                03
+              </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Prior attendance track record</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 unexcused no-show recorded within past 6 months (Orthopedics OPD).</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-center">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 36%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold whitespace-nowrap">+16% Weight</span>
+</div>
+</div>
+<!-- Factor 4 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-md bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5">
+                04
+              </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Unconfirmed 24h SMS Dispatch</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sent yesterday at 14:00. Delivery confirmed; recipient link unopened.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-center">
+<div class="w-20 bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 18%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold whitespace-nowrap">+8% Weight</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Recommended Reception Actions & API Inspector (40% -> 5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg" id="triage-actions">
+<!-- Recommended Action Panel (Core Loop Driver) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-secondary">assignment_turned_in</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Recommended Reception Actions</h2>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping" title="Live triage active"></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant -mt-space-sm">
+          Execute fast operational recovery to maintain physician utilization before the 10:15 AM window opens.
+        </p>
+<!-- ACTION OPTION 2: Instant Waitlist Matching (PRIMARY HIGHLIGHT) -->
+<div class="relative overflow-hidden rounded-xl bg-secondary/5 p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-space-xxs rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+                Primary Recommendation
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Instant Triage</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Candidates</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Offer Slot to Waitlisted Patient</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xxs">
+              3 eligible clinical candidates are presently inside the hospital lobby or within 10-minute transit proximity.
+            </p>
+</div>
+<!-- Live Match Preview Card -->
+<div class="flex items-center gap-space-md p-space-md rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-secondary-container">
+<img class="w-full h-full object-cover" data-alt="Warm studio medical portrait of Sunita Rao, a 48 year old female patient wearing maroon salwar suit, waiting calmly in hospital lounge setting, clear soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMBQAEjayBiAgw5Cuo8FSds2rMAE6mh9aLH_K9TMf7foJ25mBsMQYNAl5ldKBe4suqZoRV8ZkQCSgYducAa67PPj5Doh8ccINss3jZ0VzT_ooLr9eqpwuCl6PDVwceNBCYxQ0j-DxpoN4l0ItD3zR0Og5bqEy5lUxPCpyhN0krCZytBmAVcog_aMc38J0Ih7pYySYBKAkaf04AE2MpkmpSb6E8AZWeRdo86anKHh9e-V-bu5nBFqxH"/>
+<span class="absolute top-0 right-0 w-3 h-3 bg-secondary rounded-full border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col flex-grow min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Sunita Rao</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold whitespace-nowrap">Score: 98/100</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Waiting 42 mins in OPD Lounge</span>
+<div class="flex items-center gap-space-xs mt-space-xxs">
+<span class="px-1.5 py-0.2 rounded bg-error-container text-on-error-container font-label-sm text-[10px] font-semibold">Urgent Follow-up</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">BP Re-check</span>
+</div>
+</div>
+</div>
+<!-- Main CTA button -->
+<button class="w-full py-space-md px-space-lg rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-sm group" id="btn-match-slot" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed group-hover:rotate-12 transition-transform">swap_horiz</span>
+<span>Proceed to Waitlist Allocation &amp; Match Slot</span>
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+</button>
+</div>
+<!-- ACTION OPTION 1: Smart WhatsApp Reminder -->
+<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-low gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Option 1: Smart WhatsApp Reminder</span>
+</div>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Automated</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm font-semibold">
+<span>Interactive Template #REC-WA-04</span>
+<span class="text-secondary font-normal">2-way interactive hook</span>
+</div>
+<p class="italic text-on-surface">
+              “Hi Rahul, confirming your 10:15 AM OPD appointment today with Dr. Radhakrishnan at Room 104. Reply 1 to Confirm or 2 to Reschedule.”
+            </p>
+</div>
+<button class="w-full py-space-sm px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold shadow-sm transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">send</span>
+<span>Send Reminder (Free Up if Cancelled)</span>
+</button>
+</div>
+</div>
+<!-- API Payload Inspector Drawer Preview (For Hackathon Judges) -->
+<div class="rounded-xl bg-inverse-surface text-inverse-on-surface shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-lg py-space-md bg-on-surface flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">terminal</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-mono text-secondary-fixed">API Inspection Console</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-surface-dim font-mono">200 OK • 18ms</span>
+</div>
+</div>
+<div class="p-space-md bg-inverse-surface font-mono text-[12px] leading-relaxed overflow-x-auto text-surface-container-high max-h-72 select-all">
+<pre class="m-0"><span class="text-secondary-fixed font-bold">// 1. GET /appointments/8421</span>
+{
+  <span class="text-primary-fixed">"appointment_id"</span>: <span class="text-tertiary-fixed">"APT-8421"</span>,
+  <span class="text-primary-fixed">"patient_name"</span>: <span class="text-tertiary-fixed">"Rahul Verma"</span>,
+  <span class="text-primary-fixed">"lead_time_days"</span>: 11,
+  <span class="text-primary-fixed">"age"</span>: 24,
+  <span class="text-primary-fixed">"slot_timestamp"</span>: <span class="text-tertiary-fixed">"2025-05-14T10:15:00+05:30"</span>,
+  <span class="text-primary-fixed">"doctor_id"</span>: <span class="text-tertiary-fixed">"DOC-RADHAKRISHNAN-104"</span>
+}
+
+<span class="text-secondary-fixed font-bold">// 2. POST /predict/no-show</span>
+{
+  <span class="text-primary-fixed">"no_show_probability"</span>: <span class="text-error font-bold">0.8642</span>,
+  <span class="text-primary-fixed">"risk_tier"</span>: <span class="text-error font-bold">"CRITICAL_HIGH"</span>,
+  <span class="text-primary-fixed">"recommended_intervention"</span>: <span class="text-secondary-fixed">"IMMEDIATE_WAITLIST_MATCH"</span>,
+  <span class="text-primary-fixed">"top_candidates"</span>: [
+    { <span class="text-primary-fixed">"candidate_id"</span>: <span class="text-tertiary-fixed">"WL-4402"</span>, <span class="text-primary-fixed">"name"</span>: <span class="text-tertiary-fixed">"Sunita Rao"</span>, <span class="text-primary-fixed">"wait_mins"</span>: 42, <span class="text-primary-fixed">"triage_score"</span>: 98 }
+  ]
+}</pre>
+</div>
+<div class="px-space-md py-space-xs bg-on-surface/80 flex items-center justify-between text-surface-dim font-label-sm text-label-sm">
+<span>Target Model: ensemble_v2_prod.pkl</span>
+<span class="text-primary-fixed">Mock Active</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive toast modal state for instant match trigger -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="allocation-toast">
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl max-w-md">
+<span class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-inverse-on-surface">Waitlist Handshake Initiated</span>
+<span class="font-body-sm text-body-sm text-surface-dim">Transferring 10:15 AM slot to Sunita Rao (WL-4402). Dispatching SMS token update.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const matchBtn = document.getElementById('btn-match-slot');
+    const toast = document.getElementById('allocation-toast');
+
+    if (matchBtn && toast) {
+      matchBtn.addEventListener('click', function() {
+        matchBtn.disabled = true;
+        matchBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Reallocating Slot to Sunita Rao...</span>';
+        
+        setTimeout(() => {
+          toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+          matchBtn.classList.remove('bg-primary');
+          matchBtn.classList.add('bg-secondary');
+          matchBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Reassigned: Sunita Rao (Token #14)</span>';
+          
+          setTimeout(() => {
+            toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+          }, 4500);
+        }, 800);
+      });
+    }
+  })();
+</script></main></div></div></body></html>

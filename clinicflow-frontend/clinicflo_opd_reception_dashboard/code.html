@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#001d31","tertiary-fixed":"#cce5ff","on-surface":"#131b2e","on-primary-fixed":"#00201d","outline-variant":"#bcc9c6","on-secondary":"#ffffff","on-secondary-fixed-variant":"#005048","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-secondary-container":"#006f64","surface-container-high":"#e2e7ff","on-error-container":"#93000a","on-primary":"#ffffff","secondary":"#006b5f","on-error":"#ffffff","secondary-container":"#6df5e1","on-background":"#131b2e","on-surface-variant":"#3d4947","outline":"#6d7a77","error":"#ba1a1a","primary-fixed":"#89f5e7","tertiary":"#006194","primary-container":"#008378","surface-container-lowest":"#ffffff","surface-bright":"#faf8ff","on-tertiary-fixed-variant":"#004b73","tertiary-container":"#007bb9","on-tertiary-container":"#fdfcff","surface":"#faf8ff","error-container":"#ffdad6","on-secondary-fixed":"#00201c","on-primary-fixed-variant":"#005049","inverse-surface":"#283044","secondary-fixed-dim":"#4fdbc8","primary-fixed-dim":"#6bd8cb","surface-container-low":"#f2f3ff","surface-dim":"#d2d9f4","surface-container":"#eaedff","surface-container-highest":"#dae2fd","surface-tint":"#006a61","on-tertiary":"#ffffff","tertiary-fixed-dim":"#93ccff","inverse-primary":"#6bd8cb","on-primary-container":"#f4fffc","primary":"#00685f","secondary-fixed":"#71f8e4","background":"#faf8ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-mobile":"0.75rem","gutter-desktop":"1.25rem","space-xxs":"0.125rem","space-2xl":"2rem","margin-mobile":"1rem","margin-desktop":"2rem","space-base":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-sm":"0.5rem","space-lg":"1.25rem","space-xl":"1.5rem"},fontFamily:{"headline-lg":["manrope"],"label-sm":["inter"],"label-lg":["inter"],"body-lg":["inter"],"data-metric":["manrope"],"display-lg":["manrope"],"headline-sm":["manrope"],"headline-md":["manrope"],"label-md":["inter"],"display-lg-mobile":["manrope"],"body-md":["inter"],"body-sm":["inter"]},fontSize:{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full h-16 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="ClinicFlo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Unut0jobfMbakwVQY4AdOKPi6Bl0i6IgcdXuGtaw4iRhfyPigsY8g55t16tvdk-WeV2BQb7EndzoHz5N5NhhKGGe3g9gMVw2NlszPaWkTINqgfDDLPxk68O18Nq0xM2N-9aNZFO6NdfMGrVNUOIMkwWK9iznFc53ZCqd-b62QqlU7n-EmEDyNAx-EZzGoETwQ2t7yzLRoJ2ffybHZnhzYVkgJMZbu73BEPnHWfBh9YE6tLxHK9eqsefls"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">ClinicFlo</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Slot Recovery</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-secondary-container/20 text-on-secondary-container"><span class="material-symbols-outlined text-[14px] text-secondary animate-pulse">fiber_manual_record</span><span class="font-label-sm text-label-sm font-semibold tracking-wide">LIVE OPD: General Medicine Wing A</span></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="dashboard" href="#">Dashboard</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="waitlist-and-recovery" href="#">Waitlist &amp; Recovery</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="patient-risk-details" href="#">Patient Risk Details</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="outcomes-and-analytics" href="#">Outcomes &amp; Analytics</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xxs rounded-lg bg-surface-container-low text-on-surface"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span><span class="font-label-md text-label-md font-medium">Morning OPD (08:00 - 14:00)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant cursor-pointer">arrow_drop_down</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Mock API: ACTIVE</span></div><button aria-label="High-risk alerts" class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute -top-1 -right-1 px-1.5 py-0.2 rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold leading-tight">3</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden md:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Ananya</span><span class="font-label-sm text-label-sm text-on-surface-variant">Reception Desk 02</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between p-space-base"><div class="flex flex-col gap-space-lg"><div class="px-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Clinical Navigation</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="waitlist-and-recovery" href="#"><span class="material-symbols-outlined text-[20px]">hourglass_top</span><span class="font-label-lg text-label-lg">Waitlist &amp; Recovery</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="patient-risk-details" href="#"><span class="material-symbols-outlined text-[20px]">vital_signs</span><span class="font-label-lg text-label-lg">Patient Risk Details</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="outcomes-and-analytics" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-label-lg text-label-lg">Outcomes &amp; Analytics</span></a></nav></div><div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Wing A Acuity</span><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span></div><div class="flex items-baseline justify-between"><span class="font-headline-sm text-headline-sm text-on-surface">94% Filled</span><span class="font-label-sm text-label-sm text-secondary font-semibold">4 Freed</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Avg recovery: 2m 14s</span></div></aside><div class="pl-64"><div class="w-full pt-16"><div class="w-full bg-surface-container-low px-gutter-desktop py-space-xs shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">local_hospital</span><span>OPD Operations</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">Wing A Clinical Queue</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-secondary font-medium">Slot Recovery Active</span></div></div><main class="w-full px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full gap-space-lg">
+<!-- Core Loop Pipeline Banner -->
+<section class="w-full relative overflow-hidden rounded-xl bg-surface-container-low p-space-base shadow-sm">
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Closed-Loop OPD Slot Recovery</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm uppercase tracking-wider font-bold">Autonomous Engine</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Real-time wing monitoring &amp; queue leakage prevention protocol</p>
+</div>
+</div>
+<!-- Pipeline Steps Indicator -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-xs xl:gap-space-sm w-full xl:w-auto">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold shrink-0">1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Predict No-Show</span>
+<span class="font-label-sm text-[10px] text-error font-medium">84% detected rate</span>
+</div>
+<span class="material-symbols-outlined text-[14px] text-outline-variant ml-auto hidden lg:inline">trending_flat</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-[10px] font-bold shrink-0">2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Alert Desk Staff</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Instant push triage</span>
+</div>
+<span class="material-symbols-outlined text-[14px] text-outline-variant ml-auto hidden lg:inline">trending_flat</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] font-bold shrink-0">3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Auto-Match Waitlist</span>
+<span class="font-label-sm text-[10px] text-secondary font-medium">Geo-proximity rank</span>
+</div>
+<span class="material-symbols-outlined text-[14px] text-outline-variant ml-auto hidden lg:inline">trending_flat</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-secondary-container/30 text-on-secondary-container shadow-sm">
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] font-bold shrink-0">4</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm font-bold text-on-secondary-container truncate">Recover OPD Slot</span>
+<span class="font-label-sm text-[10px] text-secondary font-semibold">0m doctor idle</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary ml-auto">verified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Top 5 Stat Metrics -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-base rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Today's Appointments</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">calendar_month</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">48</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>18 completed</span>
+<span class="text-outline-variant">•</span>
+<span class="text-secondary font-medium">30 upcoming</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-base rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">High Risk (No-Show)</span>
+<div class="flex items-center gap-1 px-1.5 py-0.5 rounded bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[12px]">warning</span>
+<span class="font-label-sm text-[10px] font-bold">CRITICAL</span>
+</div>
+</div>
+<div class="my-space-xs flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-error">7</span>
+<span class="font-label-sm text-label-sm text-error/80 font-medium">flagged</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-error font-medium">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Slot recovery required</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-base rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Medium Risk</span>
+<div class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-[10px] font-bold">
+          MODERATE
+        </div>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">11</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">chat_bubble_outline</span>
+<span>SMS reminder sent</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-base rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Low Risk</span>
+<div class="px-1.5 py-0.5 rounded bg-secondary-container/30 text-on-secondary-container font-label-sm text-[10px] font-bold">
+          STABLE
+        </div>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">30</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>High confirmation rate</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="p-space-base rounded-xl bg-primary-container text-on-primary-container shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container/80 uppercase font-semibold">Recoverable Capacity</span>
+<span class="material-symbols-outlined text-[18px] text-on-primary-container">offline_bolt</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-primary-container">4 Slots Saved</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-primary-fixed font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+₹4,800 doctor value</span>
+</div>
+</div>
+</section>
+<!-- Main Split Layout -->
+<section class="grid grid-cols-1 xl:grid-cols-10 gap-space-lg items-start">
+<!-- Left Column: Patient Queue (70% on XL) -->
+<div class="xl:col-span-7 flex flex-col gap-space-base">
+<!-- Controls, Search, Filter Pills & Simulation -->
+<div class="p-space-base rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<!-- Search Bar -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="patientSearchInput" placeholder="Search patient name, token #, phone, or risk trigger..." type="text"/>
+</div>
+<!-- Simulate Refresh Action -->
+<button class="flex items-center justify-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors shrink-0" id="batchSimulateBtn" onclick="simulateBatchRefresh()" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary" id="refreshIcon">autorenew</span>
+<span>Simulate Batch Refresh</span>
+</button>
+</div>
+<!-- Filter Pills Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs" id="filterPillsContainer">
+<button class="px-space-sm py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold transition-all" data-filter="all" onclick="filterAppointments('all', this)" type="button">
+              All (48)
+            </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1" data-filter="high" onclick="filterAppointments('high', this)" type="button">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+              High Risk (7)
+            </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1" data-filter="medium" onclick="filterAppointments('medium', this)" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              Medium Risk (11)
+            </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface hover:bg-secondary-container/30 hover:text-on-secondary-container font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1" data-filter="low" onclick="filterAppointments('low', this)" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              Low Risk (30)
+            </button>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Sorted by: Acuity Risk (Desc)</span>
+</div>
+</div>
+</div>
+<!-- Comprehensive Appointments Table -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="appointmentsTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Patient Details</th>
+<th class="py-space-sm px-space-md">Token / Time</th>
+<th class="py-space-sm px-space-md">Age</th>
+<th class="py-space-sm px-space-md">Lead Time</th>
+<th class="py-space-sm px-space-md">Risk Tier</th>
+<th class="py-space-sm px-space-md">Probability</th>
+<th class="py-space-sm px-space-md">Status &amp; Trigger</th>
+<th class="py-space-sm px-space-md text-right">Recovery Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: Rahul Verma (High Risk) -->
+<tr class="appointment-row bg-surface-container-lowest hover:bg-surface-container-low transition-colors" data-tier="high">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                      RV
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Rahul Verma</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">UHID #98124</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md whitespace-nowrap">
+<span class="font-label-md text-label-md font-bold text-primary">#14</span>
+<span class="text-on-surface-variant ml-1 font-medium">10:15 AM</span>
+</td>
+<td class="py-space-sm px-space-md">24y</td>
+<td class="py-space-sm px-space-md font-medium text-on-surface-variant">11 days</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span> HIGH
+                  </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-12 h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 86%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-error">86%</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1 text-error font-medium">
+<span class="material-symbols-outlined text-[15px]">history_toggle_off</span>
+<span class="truncate max-w-[140px]">Historical No-show</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded-lg bg-error-container text-on-error-container font-label-sm text-label-sm font-bold hover:bg-error hover:text-on-error transition-all shadow-sm active:scale-95" onclick="triggerRecoveryModal('Rahul Verma', '#14', '10:15 AM', '86%')" type="button">
+<span class="material-symbols-outlined text-[14px]">swap_horizontal_circle</span>
+<span>Inspect &amp; Match Waitlist</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Priya Sundaram (High Risk) -->
+<tr class="appointment-row bg-surface-container-lowest hover:bg-surface-container-low transition-colors" data-tier="high">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                      PS
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Priya Sundaram</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">UHID #77291</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md whitespace-nowrap">
+<span class="font-label-md text-label-md font-bold text-primary">#15</span>
+<span class="text-on-surface-variant ml-1 font-medium">10:30 AM</span>
+</td>
+<td class="py-space-sm px-space-md">42y</td>
+<td class="py-space-sm px-space-md font-medium text-on-surface-variant">8 days</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span> HIGH
+                  </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-12 h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 79%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-error">79%</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1 text-error font-medium">
+<span class="material-symbols-outlined text-[15px]">event_busy</span>
+<span class="truncate max-w-[140px]">&gt;7d booking window</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container-high text-on-surface hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm font-semibold transition-all shadow-sm" onclick="triggerRecoveryModal('Priya Sundaram', '#15', '10:30 AM', '79%')" type="button">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+<span>Inspect &amp; Match</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Amit Patel (Low Risk) -->
+<tr class="appointment-row bg-surface-container-lowest hover:bg-surface-container-low transition-colors" data-tier="low">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                      AP
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Amit Patel</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">UHID #64019</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md whitespace-nowrap">
+<span class="font-label-md text-label-md font-bold text-primary">#16</span>
+<span class="text-on-surface-variant ml-1 font-medium">10:45 AM</span>
+</td>
+<td class="py-space-sm px-space-md">61y</td>
+<td class="py-space-sm px-space-md font-medium text-on-surface-variant">3 days</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> LOW
+                  </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-12 h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 12%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">12%</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1 text-secondary font-medium">
+<span class="material-symbols-outlined text-[15px]">done_all</span>
+<span class="truncate max-w-[140px]">Confirmed (WhatsApp)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+                    View Details
+                  </button>
+</td>
+</tr>
+<!-- Row 4: Sneha Kulkarni (Medium Risk) -->
+<tr class="appointment-row bg-surface-container-lowest hover:bg-surface-container-low transition-colors" data-tier="medium">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                      SK
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Sneha Kulkarni</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">UHID #55120</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md whitespace-nowrap">
+<span class="font-label-md text-label-md font-bold text-primary">#17</span>
+<span class="text-on-surface-variant ml-1 font-medium">11:00 AM</span>
+</td>
+<td class="py-space-sm px-space-md">31y</td>
+<td class="py-space-sm px-space-md font-medium text-on-surface-variant">5 days</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">hourglass_empty</span> MED
+                  </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-12 h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 54%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">54%</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[15px]">outgoing_mail</span>
+<span class="truncate max-w-[140px]">Reminder Delivered</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container-low text-tertiary hover:bg-surface-container-high font-label-sm text-label-sm font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">send</span>
+<span>Send Nudge</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Rajesh Nair (High Risk) -->
+<tr class="appointment-row bg-surface-container-lowest hover:bg-surface-container-low transition-colors" data-tier="high">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                      RN
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Rajesh Nair</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">UHID #43901</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md whitespace-nowrap">
+<span class="font-label-md text-label-md font-bold text-primary">#18</span>
+<span class="text-on-surface-variant ml-1 font-medium">11:15 AM</span>
+</td>
+<td class="py-space-sm px-space-md">48y</td>
+<td class="py-space-sm px-space-md font-medium text-on-surface-variant">14 days</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span> HIGH
+                  </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-12 h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 82%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-error">82%</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1 text-error font-medium">
+<span class="material-symbols-outlined text-[15px]">near_me_disabled</span>
+<span class="truncate max-w-[140px]">Distance &gt;25km</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container-high text-on-surface hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm font-semibold transition-all shadow-sm" onclick="triggerRecoveryModal('Rajesh Nair', '#18', '11:15 AM', '82%')" type="button">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+<span>Inspect &amp; Match</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: Vikram Malhotra (Low Risk) -->
+<tr class="appointment-row bg-surface-container-lowest hover:bg-surface-container-low transition-colors" data-tier="low">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+                      VM
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Vikram Malhotra</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">UHID #33019</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md whitespace-nowrap">
+<span class="font-label-md text-label-md font-bold text-primary">#19</span>
+<span class="text-on-surface-variant ml-1 font-medium">11:30 AM</span>
+</td>
+<td class="py-space-sm px-space-md">55y</td>
+<td class="py-space-sm px-space-md font-medium text-on-surface-variant">1 day</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> LOW
+                  </span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-12 h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 15%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">15%</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1 text-secondary font-medium">
+<span class="material-symbols-outlined text-[15px]">point_of_sale</span>
+<span class="truncate max-w-[140px]">Checked In at Kiosk</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+                    View Details
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Micro-footer -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>Live Sync with Wing A Registration EMR</span>
+</div>
+<div>
+            Showing 6 of 48 total active consultations today
+          </div>
+</div>
+</div>
+</div>
+<!-- Right Column: Analytics & Urgent Recovery Alerts (30% on XL) -->
+<div class="xl:col-span-3 flex flex-col gap-space-base">
+<!-- Card: Urgent Slot Recovery Alert -->
+<div class="p-space-base rounded-xl bg-surface-container-lowest shadow-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-bold text-error uppercase tracking-wider">Urgent Slot Alert</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">T-minus 25m</span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Rahul Verma</span>
+<span class="font-label-md text-label-md font-bold text-primary">Token #14</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            10:15 AM slot is unconfirmed. High historical no-show probability (86%). Risk of doctor downtime in 25 mins.
+          </p>
+</div>
+<!-- Waitlist Match Teaser -->
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm font-bold">
+              1st
+            </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Meera Sen (Waitlist)</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Waiting at Wing A Lobby • 4m ETA</span>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold">98% Match</span>
+</div>
+<button class="w-full py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs shadow-sm" onclick="triggerRecoveryModal('Rahul Verma', '#14', '10:15 AM', '86%')" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Fast-Track Waitlist Match</span>
+</button>
+</div>
+<!-- Card: Simulated Recharts Risk Distribution -->
+<div class="p-space-base rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Risk Distribution</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">OPD No-Show Acuity</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">pie_chart</span>
+</div>
+<!-- Donut Chart SVG -->
+<div class="flex flex-col items-center justify-center relative py-space-xs">
+<svg class="w-44 h-44 -rotate-90 transform" viewbox="0 0 100 100">
+<!-- Background circle -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#f2f3ff" stroke-width="12"></circle>
+<!-- Low Risk Segment (62% -> 148 circumference out of 238.76) -->
+<circle class="transition-all duration-700 ease-out" cx="50" cy="50" fill="transparent" r="38" stroke="#006b5f" stroke-dasharray="148 238.76" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Medium Risk Segment (23% -> 55 circumference) -->
+<circle class="transition-all duration-700 ease-out" cx="50" cy="50" fill="transparent" r="38" stroke="#006194" stroke-dasharray="55 238.76" stroke-dashoffset="-148" stroke-width="12"></circle>
+<!-- High Risk Segment (15% -> 35.8 circumference) -->
+<circle class="transition-all duration-700 ease-out" cx="50" cy="50" fill="transparent" r="38" stroke="#ba1a1a" stroke-dasharray="35.8 238.76" stroke-dashoffset="-203" stroke-width="12"></circle>
+</svg>
+<!-- Inside Donut Metric -->
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-display-lg text-display-lg font-bold text-on-surface leading-none">48</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">Total Tracked</span>
+</div>
+</div>
+<!-- Legends & Percentages -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Low Risk (Confirmed)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">30</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(62%)</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Medium Risk (SMS Sent)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">11</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(23%)</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md text-error font-semibold">High Risk (At Jeopardy)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-error">7</span>
+<span class="font-label-sm text-label-sm text-error/80">(15%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mock API Status Indicator Card -->
+<div class="p-space-base rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">api</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">System Health</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container/30 text-secondary font-label-sm text-[10px] font-bold">LIVE STREAM</span>
+</div>
+<div class="mt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+          Mock API Contract:
+        </div>
+<div class="px-space-sm py-space-xs rounded bg-surface-container-low font-label-sm text-[12px] font-mono text-on-surface flex items-center justify-between">
+<span>GET /api/v1/opd/appointments</span>
+<span class="text-secondary font-semibold">200 OK</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-[11px]">
+<span>Observed Latency: <strong class="text-on-surface">12ms</strong></span>
+<span>Buffer: <strong class="text-secondary">0 Drops</strong></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Waitlist Match Modal Drawer (Hidden by default) -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-space-base bg-inverse-surface/40 backdrop-blur-sm" id="recoveryModal">
+<div class="w-full max-w-lg rounded-xl bg-surface-container-lowest shadow-xl p-space-lg flex flex-col gap-space-md border-0 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">swap_calls</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Slot Recovery Matcher</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Resolve pending vacancy before doctor consultation starts</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg" onclick="closeRecoveryModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Patient Context Block -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">At-Risk Appointment</span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-[11px] font-bold" id="modalRiskBadge">86% No-Show Risk</span>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface" id="modalPatientName">Rahul Verma</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="modalSlotDetails">Token #14 (10:15 AM)</span>
+</div>
+</div>
+<!-- Highest Ranked Waitlist Match Candidates -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Ranked Waitlist Candidates</span>
+<!-- Candidate 1 -->
+<label class="p-space-sm rounded-lg bg-surface-container-low hover:bg-secondary-container/20 cursor-pointer flex items-center justify-between transition-colors border-0">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="text-secondary focus:ring-secondary h-4 w-4" name="waitlistCandidate" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Meera Sen (44y, Female)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Lobby Wing A (Walk-in waitlist) • 4m walk</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-[11px] font-bold">98% Fit</span>
+</label>
+<!-- Candidate 2 -->
+<label class="p-space-sm rounded-lg bg-surface-container-low hover:bg-secondary-container/20 cursor-pointer flex items-center justify-between transition-colors border-0">
+<div class="flex items-center gap-space-sm">
+<input class="text-secondary focus:ring-secondary h-4 w-4" name="waitlistCandidate" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Arjun Nair (36y, Male)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Hospital Cafeteria (Mobile RSVP active) • 6m walk</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-[11px] font-bold">91% Fit</span>
+</label>
+</div>
+<!-- Action Confirmation -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" onclick="closeRecoveryModal()" type="button">
+          Cancel
+        </button>
+<button class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary-container transition-all shadow-sm" onclick="confirmSlotReassignment()" type="button">
+          Confirm &amp; Reassign Slot
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Container -->
+<div class="fixed bottom-6 right-6 z-50 hidden items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-inverse-surface text-inverse-on-surface shadow-xl animate-bounce" id="toastAlert">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">OPD Slot Successfully Recovered</span>
+</div>
+</div>
+<script>
+  function filterAppointments(tier, btnElement) {
+    // Update button states
+    const pills = document.querySelectorAll('#filterPillsContainer button');
+    pills.forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary');
+      b.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+    btnElement.classList.remove('bg-surface-container-low', 'text-on-surface');
+    btnElement.classList.add('bg-primary', 'text-on-primary');
+
+    // Filter table rows
+    const rows = document.querySelectorAll('#appointmentsTable .appointment-row');
+    rows.forEach(row => {
+      if (tier === 'all' || row.dataset.tier === tier) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function simulateBatchRefresh() {
+    const icon = document.getElementById('refreshIcon');
+    icon.classList.add('animate-spin');
+    
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      showToast('Batch risk model evaluated (12ms): 48 queues synchronized.');
+    }, 600);
+  }
+
+  function triggerRecoveryModal(patientName, token, time, riskPercent) {
+    document.getElementById('modalPatientName').textContent = patientName;
+    document.getElementById('modalSlotDetails').textContent = `${token} (${time})`;
+    document.getElementById('modalRiskBadge').textContent = `${riskPercent} No-Show Risk`;
+    document.getElementById('recoveryModal').classList.remove('hidden');
+  }
+
+  function closeRecoveryModal() {
+    document.getElementById('recoveryModal').classList.add('hidden');
+  }
+
+  function confirmSlotReassignment() {
+    closeRecoveryModal();
+    showToast('Slot recovered! Meera Sen scheduled for 10:15 AM OPD.');
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toastAlert');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.textContent = message;
+    toast.classList.remove('hidden');
+    toast.classList.add('flex');
+    setTimeout(() => {
+      toast.classList.remove('flex');
+      toast.classList.add('hidden');
+    }, 3500);
+  }
+
+  // Live search filtering
+  document.getElementById('patientSearchInput')?.addEventListener('input', function(e) {
+    const term = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#appointmentsTable .appointment-row');
+    rows.forEach(row => {
+      const text = row.textContent.toLowerCase();
+      if (text.includes(term)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+</script></main></div></div></body></html>
